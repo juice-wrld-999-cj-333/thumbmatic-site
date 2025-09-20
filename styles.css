@@ -1,0 +1,120 @@
+:root{
+  --bg:#0f1115;
+  --panel:#161a22;
+  --panel-2:#1b2030;
+  --text:#e8eefc;
+  --muted:#a8b0c0;
+  --accent:#ffd24d;
+  --accent-2:#ffb800;
+  --stroke:#2a3346;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #0c0f15, #0f1115 40%, #0f1115);
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* Containers */
+.container{width:min(1100px, 92%); margin:0 auto}
+
+/* Header */
+.site-header{
+  position:sticky; top:0; z-index:10;
+  backdrop-filter:saturate(1.2) blur(8px);
+  background:rgba(15,17,21,0.6);
+  border-bottom:1px solid var(--stroke);
+}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+.brand{font-weight:800; letter-spacing:0.2px}
+.site-header .brand{color:var(--text)}
+nav a{color:var(--text); text-decoration:none; margin-left:18px; opacity:.9}
+nav a:hover{opacity:1}
+
+/* Buttons */
+.btn{
+  display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700;
+  border:1px solid var(--stroke);
+}
+.btn-primary{background:var(--accent); color:#101315; border:none}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-ghost{background:transparent; color:var(--text)}
+.btn-ghost:hover{background:rgba(255,255,255,0.06)}
+
+/* Hero */
+.hero{padding:72px 0 48px; border-bottom:1px solid var(--stroke)}
+.hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:32px; align-items:center}
+h1{font-size:42px; line-height:1.15; margin:0 0 12px}
+.accent{color:var(--accent)}
+.hero p{color:var(--muted); margin:0 0 16px}
+.hero-actions{display:flex; gap:12px; margin:14px 0 6px}
+.trust{list-style:none; padding:0; margin:16px 0 0; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap}
+
+/* Hero art mock */
+.thumb-mock{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+.thumb-card{
+  background:linear-gradient(145deg,#22293a,#1b2030);
+  border:1px solid var(--stroke); border-radius:14px; padding:26px; text-align:center; font-weight:800;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+/* Sections */
+.section{padding:72px 0}
+.section.alt{background:linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%); border-top:1px solid var(--stroke); border-bottom:1px solid var(--stroke)}
+.section h2{font-size:32px; margin:0 0 8px}
+.sub{color:var(--muted); margin:6px 0 26px}
+
+/* Cards */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.card{
+  background:linear-gradient(145deg,#141923,#10151f);
+  border:1px solid var(--stroke); border-radius:14px; padding:20px;
+}
+.card h3{margin:0 0 6px}
+.card .price{font-weight:800; font-size:22px; margin:8px 0 12px; color:var(--accent)}
+.card ul{margin:0 0 16px; padding-left:18px}
+.badge{display:inline-block; font-size:12px; padding:4px 8px; border-radius:999px; background:#25304a; color:#c7d2ea}
+
+/* Portfolio grid */
+.grid-portfolio{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.tile{
+  aspect-ratio:16/9;
+  background:linear-gradient(145deg,#22293a,#1b2030);
+  border:1px solid var(--stroke); border-radius:12px;
+  display:flex; align-items:center; justify-content:center; color:#cfd7ea; font-weight:700;
+}
+.hint{color:var(--muted); margin-top:12px}
+
+/* Features */
+.features{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.feature{background:rgba(255,255,255,0.03); border:1px solid var(--stroke); border-radius:14px; padding:18px}
+
+/* CTA */
+.cta{padding:72px 0}
+.cta-card{
+  background:linear-gradient(145deg,#22293a,#1b2030);
+  border:1px solid var(--stroke); border-radius:16px; padding:28px; text-align:center;
+}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--stroke); padding:22px 0; background:#0c0f14}
+.footer-grid{display:flex; align-items:center; justify-content:space-between; gap:16px}
+.muted{color:var(--muted)}
+.footer-nav a{color:var(--muted); text-decoration:none; margin-left:14px}
+.footer-nav a:hover{color:var(--text)}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr; text-align:left}
+  .cards{grid-template-columns:1fr}
+  .grid-portfolio{grid-template-columns:1fr 1fr}
+  .features{grid-template-columns:1fr}
+  .footer-grid{flex-direction:column; align-items:flex-start}
+}
+@media (max-width: 560px){
+  h1{font-size:32px}
+  .grid-portfolio{grid-template-columns:1fr}
+}
