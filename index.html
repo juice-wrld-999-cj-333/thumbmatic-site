@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThumbMatic — AI-Powered, Designer-Polished Thumbnails</title>
+  <meta name="description" content="AI-accelerated YouTube & podcast thumbnails, refined by a human designer. 24–48h delivery, 2 revisions included." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">ThumbMatic</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#why">Why Us</a>
+        <a class="btn btn-primary" href="#order">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>AI speed. Designer polish. <span class="accent">Thumbnails that get clicked.</span></h1>
+        <p>We blend AI concepting with human editing to deliver standout thumbnails in 24–48 hours. Two revisions included.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#order">Order a Thumbnail</a>
+          <a class="btn btn-ghost" href="#portfolio">See Examples</a>
+        </div>
+        <ul class="trust">
+          <li>✅ 24–48h delivery</li>
+          <li>✅ 2 revisions included</li>
+          <li>✅ Commercial use</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <!-- Placeholder “mock” montage -->
+        <div class="thumb-mock">
+          <div class="thumb-card">BOLD TEXT</div>
+          <div class="thumb-card">REACTION FACE</div>
+          <div class="thumb-card">CINEMATIC</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Pricing -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services & Pricing</h2>
+      <p class="sub">Simple pricing. Fast turnaround. Subscriptions available soon.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>One-Off Thumbnail</h3>
+          <p class="price">$25–$30</p>
+          <ul>
+            <li>1 final thumbnail (1280×720 PNG)</li>
+            <li>2 revision rounds</li>
+            <li>24–48h delivery</li>
+          </ul>
+          <a class="btn btn-primary" href="#order">Order Now</a>
+        </div>
+        <div class="card">
+          <h3>Creator Pack (Coming Soon)</h3>
+          <p class="price">$99/mo</p>
+          <ul>
+            <li>5 thumbnails / month</li>
+            <li>Priority turnaround</li>
+            <li>Brand-kit consistency</li>
+          </ul>
+          <span class="badge">Soon</span>
+        </div>
+        <div class="card">
+          <h3>Growth Plan (Coming Soon)</h3>
+          <p class="price">$249/mo</p>
+          <ul>
+            <li>15 thumbnails / month</li>
+            <li>Content calendar support</li>
+            <li>Source files on request</li>
+          </ul>
+          <span class="badge">Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <h2>Recent Work</h2>
+      <p class="sub">A few styles we can hit fast: bold, cinematic, minimal, reaction-driven.</p>
+      <div class="grid-portfolio">
+        <div class="tile">Before → After</div>
+        <div class="tile">Minimal</div>
+        <div class="tile">Bold</div>
+        <div class="tile">Cinematic</div>
+        <div class="tile">Tutorial</div>
+        <div class="tile">Podcast</div>
+      </div>
+      <p class="hint">Replace these tiles with real samples later. JPG/PNG works great.</p>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2>Why ThumbMatic?</h2>
+      <div class="features">
+        <div class="feature">
+          <h4>AI + Human Editing</h4>
+          <p>3–5 AI concepts, refined by a designer for composition, typography, and brand consistency.</p>
+        </div>
+        <div class="feature">
+          <h4>Fast & Reliable</h4>
+          <p>24–48h standard delivery and clear revision windows—no ghosting.</p>
+        </div>
+        <div class="feature">
+          <h4>CTR-First Design</h4>
+          <p>Contrast, focus, facial expressions, and big text hierarchy to maximize clicks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order CTA -->
+  <section id="order" class="section cta">
+    <div class="container cta-card">
+      <h2>Ready to boost your clicks?</h2>
+      <p>Place an order request—we’ll respond with ETA and next steps.</p>
+      <a class="btn btn-primary" href="https://github.com/new" target="_blank" rel="noopener">Start Order (temp)</a>
+      <p class="tiny">Week 2 we’ll wire this to a real order form (Netlify/Vercel form or Formspree).</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">ThumbMatic</div>
+        <p class="muted">AI-accelerated thumbnails, refined by humans. © <span id="year"></span></p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#why">Why Us</a>
+        <a href="#order">Order</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
